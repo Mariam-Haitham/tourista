@@ -1,0 +1,111 @@
+img {
+	width: 300px;
+	height: 300px;
+	margin-bottom: 15px;
+}
+
+.navbar a:hover {
+	color: #003366;
+}
+
+.card-link {
+	color: #003366;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.card-footer {
+	background-color: #ffff00;
+}
+
+
+.card-body .card-title {
+	color: black;
+	font-weight: 600;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+.card {
+	margin-bottom: 15px;
+	margin-left: 5px;
+	border-color: #ffff00;
+}
+
+.navbar{
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	background-color: #ffff00;
+}
+
+.navbar h1{
+	font-weight: 900;
+	font-size: 40px;
+	letter-spacing: 1px;
+	
+}
+
+.navbar a {
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.list-group-item {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.list-group-item p {
+	font-weight: bold;
+}
+
+.name {
+	font-weight: bold;
+}
+
+.column1 {
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.column2 {
+	margin-top: 125px;
+}
+
+.row1 {
+	margin-left: 100px;
+	margin-bottom: 160px;
+	
+}
+
+.btn_create {
+	background-color: white;
+  	color: black;
+  	border: 2px solid #003366; 
+  	color: #003366;
+  	font-weight: bold; 
+}
+
+
+.btn_update, .btn_delete {
+	width: 150px;
+	background-color: white;
+  	color: black;
+  	border: 2px solid #003366; 
+  	color: #003366;
+  	font-weight: bold; 
+}
+
+.btn_update:hover, .btn_delete:hover, .btn_create:hover{
+	color: #ffff00;
+	background-image:none !important;
+	background-color: #003366 !important;
+	border-color: #003366 !important;
+}
+
+.jumbotron {
+	margin-top: 20px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+

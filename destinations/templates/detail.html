@@ -3,15 +3,24 @@
 {% block title %}Detail{% endblock title %} 
 
 {% block content %}
-    <p>{{destination.name}}</p>
-    <p>{{destination.description}}</p>
-    <p>{{destination.activities}}</p>
-    <p><img src="{{destination.pretty_picture.url}}"></p>
-    <p>{{destination.optimal_visiting_season}}</p>
-    <a href="{% url 'destination-update' destination.id %}">
-        <button>Update</button>
-    </a>
-    <a href="{% url 'destination-delete' destination.id %}">
-        <button>Delete</button>
-    </a>
+<div class="container">
+	  <div class="row row1">
+	    <div class="col column1">
+	    	<div class="card" style="width: 18rem; float: left;">
+			  <ul class="list-group list-group-flush">
+			    <li class="list-group-item name"> {{destination.name}}</li>
+			    <li class="list-group-item"> <p> Description: </p> {{destination.description}}</li>
+			    <li class="list-group-item"> <p> Activities: </p> {{destination.activities}}</li>
+			    <li class="list-group-item"> <p> Optimal visiting season: </p> {{destination.optimal_visiting_season}}</li>
+			  </ul>
+			</div>
+		</div>
+    	<div class="col column2">
+    		<p><img src="{{destination.pretty_picture.url}}"></p>
+    		<a href="{% url 'destination-update' destination.id %}" class="btn btn-outline-primary btn btn_update"> Update </a>
+    		<a href="{% url 'destination-delete' destination.id %}" class="btn btn-outline-primary btn btn_delete"> Delete </a>
+    	</div>
+    </div>
+</div>
 {% endblock content %}
+

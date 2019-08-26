@@ -6,11 +6,16 @@
 <br>
 <div class="row">
   {% for destination in destinations %}
-  <a href="{% url 'destination-detail' destination.id %}">
+   <div class = "col-12 col-md-6 col-lg-4">
     <img src="{{destination.pretty_picture.url}}" />
-    <p>{{destination.name}}</p>
-    <p>{{destination.activities}}</p>
-  </a>
+      <div class="card" style="width: 18rem;">
+      <div class="card-body">
+      <h5 class="card-title">{{ destination.name }}</h5>
+      <a href="{% url 'destination-detail' destination.id%}" class="card-link">More details</a>
+    </div>
+</div>
+</div>  
   {% endfor %}
 </div>
 {% endblock content %}
+
